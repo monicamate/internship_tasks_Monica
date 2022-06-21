@@ -1,5 +1,3 @@
-
-
 it ('should be able to visit web page',()  => {
     cy.visit('https://onex.am/')
     cy.get('.onex_bg_green').click()
@@ -24,16 +22,6 @@ it ('should be able to visit web page',()  => {
     cy.get('#product_price-error').should('have.text',"Խնդրում ենք լրացնել հետևյալ դաշտը")
     cy.get('#product_price-error').type("350")
     cy.get('.col-md-2 > .form-control').click()
-
-
-
-    
-    ////cy.get('id="product_url-error"').should('have.text',"This field is required");
-    /// cy.get('#product_name').type('Playstation 5')
-    ////cy.get('#product_price').type('350 ')
-    ////cy.get('.col-md-2 > .form-control').click()
-
-
 })
 
 
